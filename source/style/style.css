@@ -1,0 +1,29 @@
+/* Fonts */
+@font-face {
+  font-family: sm;
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: md;
+  src: url("../fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: lg;
+  src: url("../fonts/Lato-Black.ttf");
+}
+
+/* Main Font Color */
+:root {
+  --black: #272a31;
+  --orange: #ec5242;
+  --gray: #d3d3d3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
