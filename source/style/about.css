@@ -1,3 +1,5 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
 /* Fonts */
 @font-face {
   font-family: sm;
@@ -167,6 +169,7 @@
   text-align: center;
   width: 100%;
 }
+
 .achivment-title {
   margin: 1.5rem auto 1rem;
   font-size: 1.4rem;
@@ -224,6 +227,7 @@
   display: block;
   font-size: 1.5rem;
 }
+
 /* Partner */
 .partner {
   background-color: rgba(20, 20, 20, 0.6);
@@ -271,6 +275,7 @@
 .fa-brands {
   font-size: 2rem;
 }
+
 /* footer */
 .footer p {
   margin-top: 2rem;
@@ -278,6 +283,7 @@
   text-align: center;
   color: var(--orange);
 }
+
 /* ========================================== */
 .nav .logo {
   width: 5%;

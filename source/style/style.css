@@ -1,3 +1,6 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
 /* Fonts */
 @font-face {
   font-family: sm;
@@ -236,6 +239,7 @@ button.btn-join {
   text-align: center;
   color: var(--orange);
 }
+
 /* ========================================== */
 .nav .logo {
   width: 5%;
