@@ -201,6 +201,34 @@
   margin-bottom: 3rem;
 }
 
+/* Feature speaker */
+.feature-speaker {
+  background-image: none;
+}
+
+.feature-speaker .card {
+  border: 1px solid var(--orange);
+  border-radius: 10px;
+}
+
+.feature-speaker .speaker-header {
+  color: var(--black);
+}
+
+.feature-speaker .card .card-image i {
+  color: var(--orange);
+}
+
+.feature-speaker .card-body p {
+  color: var(--black);
+}
+
+button.btn-join {
+  background-color: #fff;
+  border: 1px solid var(--orange);
+  outline: none;
+}
+
 /* ========================================== */
 .nav .logo {
   width: 5%;
