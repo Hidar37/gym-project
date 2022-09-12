@@ -90,6 +90,7 @@
   display: flex;
   flex-direction: column;
   padding: 20px 20px 50px;
+  text-align: center;
 }
 
 .hero-wrapper .greeting {
@@ -102,58 +103,40 @@
   color: var(--orange);
   font-size: 2rem;
   font-family: lg;
+  margin-top: 30px;
   margin-bottom: 30px;
-  text-align: left;
+  text-align: center;
 }
 
 .hero-wrapper .hero-header-desc {
   color: var(--gray);
   font-size: 1.2rem;
-  border: 1px solid var(--gray);
-  padding: 0.6rem;
 }
 
-.hero-wrapper .hero-header-time {
-  margin-top: 1rem;
-}
-
-.hero-wrapper .hero-header-time,
-.hero-header-time .workout-time {
+.hero-header-time {
   color: var(--gray);
-  font-size: 1.3rem;
 }
 
-.hero-header-time .workout-time {
-  margin-right: 0.2rem;
+.hero-wrapper .hero-header-time a.email {
+  color: var(--orange);
 }
 
-.workout-time i.fa-clock {
-  margin-right: 0.6rem;
-  font-size: 1rem;
+/* Logo Info */
+.logo-info {
+  text-align: center;
+  border-bottom: 1px solid var(--gray);
 }
 
-/* Services Section */
-.services {
-  padding-right: 20px;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: url("../images/services.webp");
-  background-position: center();
-  background-size: cover;
-}
-
-.services .services-header {
+.logo-info .logo-title {
   margin: 1.5rem auto 2rem;
   font-size: 1.8rem;
-  color: var(--gray);
+  color: var(--black);
   padding-bottom: 1rem;
   position: relative;
   font-family: lg;
 }
 
-.services .services-header::after {
+.logo-info .logo-title::after {
   content: " ";
   width: 20%;
   display: block;
@@ -165,73 +148,132 @@
   right: 40%;
 }
 
-.card {
-  background-color: rgba(247, 230, 230, 0.1);
+.logo-info .logo-desc {
+  margin: auto 0.8rem;
+}
+
+.logo-img {
+  margin: 1rem;
+}
+
+.logo-img img {
+  width: 100%;
+  border: 1px solid var(--gray);
   padding: 1rem;
+}
+
+/* Past Achivment */
+.achivment {
+  text-align: center;
+  width: 100%;
+}
+.achivment-title {
+  margin: 1.5rem auto 1rem;
+  font-size: 1.4rem;
+  color: var(--black);
+  padding-bottom: 1rem;
+  position: relative;
+  font-family: md;
+}
+
+.achivment-title::after {
+  content: " ";
+  width: 10%;
+  display: block;
+  height: 1px;
+  position: absolute;
+  background-color: var(--orange);
+  margin: 1rem auto;
+  left: 40%;
+  right: 40%;
+}
+
+.achivment-desc {
+  font-size: 1rem;
+  font-family: sm;
+  margin-bottom: 2rem;
+}
+
+.achivment-img {
+  width: 80%;
+  height: 200px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1rem auto;
+}
+
+.achivment-1 {
+  background-image: linear-gradient(rgb(247, 206, 173), rgba(233, 15, 15, 0.1)), url('../images/Olympia-2021.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.achivment-2 {
+  background-image: linear-gradient(rgb(247, 206, 173), rgba(233, 15, 15, 0.1)), url('../images/arnold-classic.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.achivment-year {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.achivment-year .achivment-year-desc {
+  display: block;
+  font-size: 1.5rem;
+}
+/* Partner */
+.partner {
+  background-color: rgba(20, 20, 20, 0.6);
+}
+
+.p-header {
+  margin: 1.5rem auto 2rem;
+  font-size: 1.8rem;
+  color: var(--gray);
+  padding-bottom: 1rem;
+  position: relative;
   text-align: center;
-  margin-bottom: 1rem;
+  font-family: lg;
 }
 
-.card .card-image i {
-  font-size: 3rem;
-  color: var(--gray);
-}
-
-.card-header {
-  color: var(--orange);
-  margin: 1rem 1rem;
-}
-
-.card-body p {
-  color: var(--gray);
-  font-family: sm;
-}
-
-.btn-join {
+.p-header::after {
+  content: " ";
+  width: 20%;
+  display: block;
+  height: 1px;
+  position: absolute;
   background-color: var(--orange);
-  padding: 1rem;
-  text-align: center;
+  margin: 1rem auto;
+  left: 40%;
+  right: 40%;
+}
+
+.p-nav {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.p-nav .p-item {
+  margin: auto 1rem 1rem;
+}
+
+.p-item .p-link {
   text-decoration: none;
-  font-size: 1.2rem;
   color: var(--gray);
-  margin-bottom: 3rem;
+  font-size: 1.4rem;
 }
 
-/* Feature speaker */
-.feature-speaker {
-  background-image: none;
+.fa-brands {
+  font-size: 2rem;
 }
-
-.feature-speaker .card {
-  border: 1px solid var(--orange);
-  border-radius: 10px;
-}
-
-.feature-speaker .speaker-header {
-  color: var(--black);
-}
-
-.feature-speaker .card .card-image img {
-  width: 50%;
-  border-radius: 100%;
-}
-
-.feature-speaker .card-body p {
-  color: var(--black);
-}
-
-button.btn-join {
-  background-color: #fff;
-  border: 1px solid var(--orange);
-  outline: none;
-}
-
 /* footer */
 .footer p {
+  margin-top: 2rem;
   font-size: 1rem;
   text-align: center;
   color: var(--orange);
