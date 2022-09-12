@@ -25,8 +25,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 16px;
   font-family: md;
+  font-size: 16px;
 }
 
 /* Nav Menu Section */
@@ -35,6 +35,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem;
+  position: sticky;
 }
 
 .nav #show-menu {
@@ -42,6 +43,7 @@
   background-color: #fff;
   z-index: 10000000000;
   transition: all 1s;
+  margin-left: 1rem;
 }
 
 .nav #show-menu i {
@@ -78,6 +80,59 @@
 .nav-item #link-active {
   color: var(--orange);
 }
+
+/* Header Hero Section */
+.hero-wrapper {
+  background-image:
+    linear-gradient(rgb(255, 255, 255), rgba(78, 56, 73, 0.73)), url('../images/main-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 50px;
+}
+
+.hero-wrapper .greeting {
+  font-size: 1.6rem;
+  color: var(--orange);
+  font-family: sm;
+}
+
+.hero-wrapper .hero-header-text {
+  color: var(--orange);
+  font-size: 2rem;
+  font-family: lg;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.hero-wrapper .hero-header-desc {
+  color: var(--gray);
+  font-size: 1.2rem;
+  border: 1px solid var(--gray);
+  padding: 0.6rem;
+}
+
+.hero-wrapper .hero-header-time {
+  margin-top: 1rem;
+}
+
+.hero-wrapper .hero-header-time,
+.hero-header-time .workout-time {
+  color: var(--gray);
+  font-size: 1.6rem;
+}
+
+.hero-header-time .workout-time {
+  margin-right: 1rem;
+}
+
+.workout-time i.fa-clock {
+  margin-right: 0.6rem;
+  font-size: 1.2rem;
+}
+
 
 /* ========================================== */
 .nav .logo {
