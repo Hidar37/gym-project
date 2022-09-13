@@ -20,8 +20,8 @@
     <button id="show-menu"><i class="fas fa-bars" id="change-icon"></i></button>
     <!-- nav menu -->
     <ul class="nav-menu" id="nav-menu">
-      <li class="nav-item"><a href="about-us.html" class="nav-link" id="link-active">About</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Program</a></li>
+      <li class="nav-item"><a href="index.html" class="nav-link" id="link-active">Home</a></li>
+      <li class="nav-item"><a href="about-us.html" class="nav-link">About</a></li>
       <li class="nav-item"><a href="#" class="nav-link">Join</a></li>
       <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
       <li class="nav-item"><a href="#" class="nav-link">News</a></li>
@@ -34,7 +34,8 @@
     <h1 class="hero-header-text">
       Victory isn't defined by wins and losses, it's defined by effort
     </h1>
-    <p class="hero-header-desc">Paramount Gym is Monmouth and Middlesex County’s premier fitness facility.  Located in Matawan, New Jersey our 6300 square foot facility houses some of the industry’s biggest names.
+    <p class="hero-header-desc">Paramount Gym is Monmouth and Middlesex County’s premier fitness facility. Located in
+      Matawan, New Jersey our 6300 square foot facility houses some of the industry’s biggest names.
     </p>
     <p class="hero-header-time">Please contact us per Email for any further question about GOLD GYM.</p>
     <p class="hero-header-time"><a href="#" class="email">hidarahmdi5@gmail.com</a></p>
@@ -42,7 +43,7 @@
 
   <!-- Section Logo Info -->
   <section class="logo-info">
-    <h1 class="logo-title">GOLD GYM Logo</h1>
+    <h1 class="logo-title" id="hide-me">GOLD GYM Logo</h1>
     <p class="logo-desc">The logo of GOLD GYM was decided through the logo competition from 8.june to 7.july.</p>
     <div class="logo-img">
       <img src="source/images/logo.svg" alt="GOLD GYM LOGO">
@@ -54,11 +55,13 @@
     <h1 class="achivment-title">See the past GOLD GYM Achivment's</h1>
     <p class="achivment-desc">Take a look at the last two GOLD GYM achivment's which took place in USA and BRAZIL.</p>
     <!-- Achivment 1 -->
-    <div class="achivment-1 achivment-img">
-      <p class="achivment-year">2022 <span class="achivment-year-desc">Mr. Olympia 2021</span></p>
-    </div>
-    <div class="achivment-2 achivment-img">
-      <p class="achivment-year">2022 <span class="achivment-year-desc">Arnold Classic 2022</span></p>
+    <div class="achivment-wrapper">
+      <div class="achivment-1 achivment-img">
+        <p class="achivment-year">2022 <span class="achivment-year-desc">Mr. Olympia 2021</span></p>
+      </div>
+      <div class="achivment-2 achivment-img">
+        <p class="achivment-year">2022 <span class="achivment-year-desc">Arnold Classic 2022</span></p>
+      </div>
     </div>
   </section>
 
@@ -75,8 +78,17 @@
   </section>
 
   <!-- footer -->
-  <footer class="footer">
-    <p>&copy; 2022 Creative Comman Korea. Some Rights Reserved.</p>
+  <footer>
+    <div class="footer">
+      <img src="source/images/logo2.png" alt="LOGO">
+      <div class="footer-text">
+        <p>&copy; 2022 Creative Haider Ahmad. Some Rights Reserved.</p>
+        <p class="footer-p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt earum culpa rerum iure cumque
+          repudiandae
+          porro. Commodi repudiandae enim error aspernatur excepturi eveniet vero accusamus quis magni, nobis aperiam
+          asperiores.</p>
+      </div>
+    </div>
   </footer>
   <!-- Humbarger Menu JS -->
   <script src="source/js/humbarger.js"></script>

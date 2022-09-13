@@ -38,7 +38,15 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem;
-  position: sticky;
+}
+
+.nav .logo {
+  width: 5%;
+  display: none;
+}
+
+.nav .logo img {
+  width: 100%;
 }
 
 .nav #show-menu {
@@ -233,19 +241,220 @@ button.btn-join {
   outline: none;
 }
 
-/* footer */
-.footer p {
-  font-size: 1rem;
-  text-align: center;
-  color: var(--orange);
-}
-
-/* ========================================== */
-.nav .logo {
-  width: 5%;
+/* Partner */
+.partner {
+  background-color: rgba(20, 20, 20, 0.6);
   display: none;
 }
 
-.nav .logo img {
-  width: 100%;
+.p-header {
+  margin: 1.5rem auto 2rem;
+  font-size: 1.8rem;
+  color: var(--gray);
+  padding-bottom: 1rem;
+  position: relative;
+  text-align: center;
+  font-family: lg;
+}
+
+.p-header::after {
+  content: " ";
+  width: 40px;
+  display: block;
+  height: 1px;
+  position: absolute;
+  background-color: var(--orange);
+  margin: 1rem auto;
+  left: 40%;
+  right: 40%;
+}
+
+.p-nav {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.p-nav .p-item {
+  margin: auto 1rem 1rem;
+}
+
+.p-item .p-link {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 1.4rem;
+}
+
+.fa-brands {
+  font-size: 2rem;
+}
+
+/* footer */
+footer {
+  background-color: #dfdede;
+  display: none;
+}
+
+.footer {
+  width: 70%;
+  padding: 3rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #dfdede;
+}
+
+footer .footer-text > p {
+  margin-bottom: 1rem;
+}
+
+.footer-text p {
+  color: var(--black);
+  font-family: sm;
+  padding-left: 2rem;
+}
+
+/* Desktop Version */
+@media screen and (min-width: 768px) {
+  /* Nav Menu Section */
+  .nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav .logo {
+    display: block;
+  }
+
+  .nav #show-menu {
+    display: none;
+  }
+
+  .nav .nav-menu {
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    position: static;
+    padding: 0;
+  }
+
+  .nav-item .nav-link {
+    font-size: 1.2rem;
+    margin-right: 3rem;
+  }
+
+  .hero-wrapper {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(3, 3, 3, 0.73)), url('../images/main-bg.jpg');
+    padding: 3rem;
+    border: 0;
+  }
+
+  /* Hero Section */
+  .hero-container {
+    width: 60%;
+    margin-left: 11rem;
+  }
+
+  .hero-wrapper .greeting {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .hero-wrapper .hero-header-text {
+    font-size: 3.4rem;
+    margin: 0;
+  }
+
+  .hero-wrapper .hero-header-desc {
+    font-family: sm;
+    border: 0;
+    line-height: 2rem;
+  }
+
+  .hero-wrapper .hero-header-time {
+    margin-bottom: 2rem;
+  }
+
+  .hero-wrapper .hero-header-time,
+  .hero-header-time .workout-time {
+    font-size: 2rem;
+  }
+
+  /* Services Section */
+  .services .services-header {
+    font-size: 2.2rem;
+  }
+
+  .services .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services .card-wrapper .card {
+    width: 25%;
+    margin: 1rem;
+  }
+
+  .card-wrapper .card-image i {
+    font-size: 4rem;
+  }
+
+  .card-wrapper .card-header {
+    font-size: 1.5rem;
+  }
+
+  .card-wrapper .card-body p {
+    font-size: 1.2rem;
+  }
+
+  .btn-join {
+    width: 30%;
+    margin-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* Feature section */
+  .f-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .f-card-wrapper .card {
+    width: 45%;
+    margin: 1rem;
+  }
+
+  .f-card-wrapper .card-image i {
+    font-size: 4rem;
+  }
+
+  .f-card-wrapper .card-header {
+    font-size: 1.2rem;
+  }
+
+  .f-card-wrapper .card-body p {
+    font-size: 1rem;
+  }
+
+  .feature-speaker .btn-join {
+    display: none;
+  }
+
+  /* Partner */
+  .partner {
+    display: block;
+  }
+
+  .p-item .p-link {
+    font-size: 2rem;
+  }
+
+  /* Footer */
+  footer {
+    display: block;
+  }
 }

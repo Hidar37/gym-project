@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 
 /* Fonts */
@@ -40,6 +41,15 @@
   position: sticky;
 }
 
+.nav .logo {
+  width: 5%;
+  display: none;
+}
+
+.nav .logo img {
+  width: 100%;
+}
+
 .nav #show-menu {
   border: 0;
   background-color: #fff;
@@ -65,7 +75,7 @@
   background-color: #fff;
   position: absolute;
   transition: all 0.5s;
-  z-index: 10000;
+  z-index: 1000000;
 }
 
 .nav-item {
@@ -127,6 +137,7 @@
 .logo-info {
   text-align: center;
   border-bottom: 1px solid var(--gray);
+  z-index: 10;
 }
 
 .logo-info .logo-title {
@@ -136,6 +147,7 @@
   padding-bottom: 1rem;
   position: relative;
   font-family: lg;
+  display: block;
 }
 
 .logo-info .logo-title::after {
@@ -277,19 +289,123 @@
 }
 
 /* footer */
-.footer p {
-  margin-top: 2rem;
-  font-size: 1rem;
-  text-align: center;
-  color: var(--orange);
+footer {
+  background-color: #dfdede;
 }
 
-/* ========================================== */
-.nav .logo {
-  width: 5%;
+.footer {
+  width: 70%;
+  padding: 3rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #dfdede;
+}
+
+footer .footer-text > p {
+  margin-bottom: 1rem;
+}
+
+.footer-text p {
+  color: var(--black);
+  font-family: sm;
+  padding-left: 2rem;
+}
+
+.footer-p2 {
   display: none;
 }
 
-.nav .logo img {
-  width: 100%;
+/* ========================================== */
+@media screen and (min-width: 768px) {
+  /* Nav Menu Section */
+  .nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav .logo {
+    display: block;
+  }
+
+  .nav #show-menu {
+    display: none;
+  }
+
+  .nav .nav-menu {
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    position: static;
+    padding: 0;
+  }
+
+  .nav-item .nav-link {
+    font-size: 1.2rem;
+    margin-right: 3rem;
+  }
+
+  /* Hero Section */
+  .hero-wrapper {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(3, 3, 3, 0.73)), url('../images/main-bg.jpg');
+    padding: 3rem;
+    border: 0;
+  }
+
+  .hero-container {
+    width: 60%;
+    margin-left: 11rem;
+  }
+
+  .hero-wrapper .greeting {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .hero-wrapper .hero-header-text {
+    font-size: 3.4rem;
+    margin: 0;
+  }
+
+  .hero-wrapper .hero-header-desc {
+    font-family: sm;
+    border: 0;
+    line-height: 2rem;
+  }
+
+  .hero-wrapper .hero-header-time {
+    margin-bottom: 2rem;
+  }
+
+  .hero-wrapper .hero-header-time,
+  .hero-header-time .workout-time {
+    font-size: 2rem;
+  }
+
+  /* Logo Info */
+  .logo-img img {
+    width: 30%;
+  }
+
+  /* Achivment */
+  .achivment-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .achivment-img {
+    width: 30%;
+    margin: 1rem;
+  }
+
+  /*  Partner */
+  .partner {
+    display: block;
+  }
+
+  .p-item .p-link {
+    font-size: 2rem;
+  }
 }
