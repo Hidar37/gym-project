@@ -54,25 +54,25 @@
   background-color: #fff;
   z-index: 10000000000;
   transition: all 1s;
-  margin-left: 1rem;
 }
 
 .nav #show-menu i {
   font-size: 2rem;
+  position: fixed;
 }
 
 .nav .nav-menu {
   display: flex;
   flex-direction: column;
+  position: fixed;
   width: 100vw;
-  height: 100vh;
-  top: 0%;
+  height: 100%;
   left: -100%;
+  top: 0%;
   padding-top: 40px;
   padding-left: 14px;
   list-style-type: none;
   background-color: #fff;
-  position: absolute;
   transition: all 0.5s;
   z-index: 10000;
 }
@@ -86,6 +86,13 @@
   color: var(--black);
   font-family: md;
   font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--orange);
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .nav-item #link-active {
@@ -101,6 +108,7 @@
   display: flex;
   flex-direction: column;
   padding: 20px 20px 50px;
+  margin-top: 1rem;
 }
 
 .hero-wrapper .greeting {
@@ -185,6 +193,13 @@
   align-items: center;
   text-align: center;
   margin-bottom: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  border: 1px solid var(--gray);
+  transform: scale(1.1, 1.1);
 }
 
 .card .card-image i {
@@ -210,6 +225,11 @@
   font-size: 1.2rem;
   color: var(--gray);
   margin-bottom: 3rem;
+  transition: all 0.3s;
+}
+
+.btn-join:hover {
+  background-color: #ac3f33;
 }
 
 /* Feature speaker */
@@ -217,9 +237,19 @@
   background-image: none;
 }
 
+.change-height {
+  height: 620px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
 .feature-speaker .card {
   border: 1px solid var(--orange);
   border-radius: 10px;
+}
+
+.feature-speaker .card:hover {
+  transform: scale(0.9, 0.9);
 }
 
 .feature-speaker .speaker-header {
@@ -239,6 +269,7 @@ button.btn-join {
   background-color: #fff;
   border: 1px solid var(--orange);
   outline: none;
+  margin-top: 1rem;
 }
 
 /* Partner */
@@ -278,6 +309,11 @@ button.btn-join {
 
 .p-nav .p-item {
   margin: auto 1rem 1rem;
+  transition: all 0.5s;
+}
+
+.p-item:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .p-item .p-link {
@@ -347,6 +383,7 @@ footer .footer-text > p {
   .hero-wrapper {
     background-image: linear-gradient(rgb(255, 255, 255), rgba(3, 3, 3, 0.73)), url('../images/main-bg.jpg');
     padding: 3rem;
+    margin: 0;
     border: 0;
   }
 
@@ -418,9 +455,14 @@ footer .footer-text > p {
 
   /* Feature section */
   .f-card-wrapper {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .change-height {
+    height: auto;
   }
 
   .f-card-wrapper .card {

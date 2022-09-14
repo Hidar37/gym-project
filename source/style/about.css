@@ -87,6 +87,13 @@
   color: var(--black);
   font-family: md;
   font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--orange);
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .nav-item #link-active {
@@ -174,6 +181,11 @@
   width: 50%;
   border: 1px solid var(--gray);
   padding: 1rem;
+  transition: all 0.5s;
+}
+
+.logo-img img:hover {
+  transform: scale(0.9, 0.9);
 }
 
 /* Past Achivment */
@@ -216,6 +228,11 @@
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
+  transition: all 0.5s;
+}
+
+.achivment-img:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .achivment-1 {
@@ -276,6 +293,11 @@
 
 .p-nav .p-item {
   margin: auto 1rem 1rem;
+  transition: all 0.5s;
+}
+
+.p-item:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .p-item .p-link {
