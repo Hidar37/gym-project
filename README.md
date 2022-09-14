@@ -1,16 +1,16 @@
 # Capstone-project-gym
 
-> This is the first Mileston project that i am going to build which is A website for a gym. For now nothing is working but once i have completed this porject it will work very well.
+> This is the first Milestone project that I am going to build which is A website for a gym. This project is created with HTML, CSS AND JS and has some functionality like the hamburger menu, adapting to different screen sizes(Mobile and Desktop Version). For now only the [Home] and [about] page is working. I special thanks to Mr. Cindy Shin for lating as to use their website design.
 
 ## Built With
 
 - HTML
 - CSS
--JS
+- JS
 
 ## Live Demo (if available)
 
-https://hidar37.github.io/
+https://hidar37.github.io/gym-project/
 
 ## Author
 
