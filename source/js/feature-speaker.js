@@ -39,8 +39,7 @@ const data = [
     cardText: 'Best place for perpearing for Professional carrear.',
   },
 ];
-for (let x = 0; x < data.length; x++) {git commit -m 'Black and white background added to feature-speaker images as it was mentioned in request changes.'
-
+for (let x = 0; x < data.length; x++) {
   const featureSpeakerBody = `<div class="feature-card">
   <!-- card -image -->
   <div class="feature-card-image">
