@@ -30,7 +30,7 @@ moreBtn.addEventListener('click', () => {
     countMoreClick += 1;
   } else {
     document.getElementById('more').textContent = 'More';
-    document.querySelector('.change-height').style.height = '250px';
+    document.querySelector('.change-height').style.height = '470px';
     countMoreClick += 1;
   }
 });

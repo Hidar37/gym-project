@@ -243,7 +243,7 @@
 }
 
 .change-height {
-  height: 250px;
+  height: 470px;
   overflow: hidden;
   transition: all 0.5s;
 }
@@ -252,24 +252,26 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   width: 100%;
 }
 
 .feature-card .feature-card-image {
   width: 60%;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
-.feature-card .feature-card-image img {
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
+#black-white {
+  height: 90px;
+  width: 90px;
 }
 
 .body-builder-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
   position: relative;
-  top: -40%;
+  top: -38%;
   left: 25%;
 }
 
@@ -315,7 +317,7 @@ button.btn-join {
 
 /* Partner */
 .partner {
-  background-color: rgba(20, 20, 20, 0.6);
+  background-color: #414246;
   display: none;
 }
 
@@ -540,6 +542,7 @@ footer .footer-text > p {
 
   .feature-card {
     width: 40%;
+    justify-content: center;
   }
 
   .feature-card .feature-card-image {
@@ -548,6 +551,10 @@ footer .footer-text > p {
 
   .feature-card .feature-card-image img {
     width: 100%;
+  }
+
+  .feature-card-body {
+    width: 50%;
   }
 
   .feature-card-body h6 {

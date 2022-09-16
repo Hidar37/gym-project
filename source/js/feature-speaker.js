@@ -43,7 +43,7 @@ for (let x = 0; x < data.length; x++) {
   const featureSpeakerBody = `<div class="feature-card">
   <!-- card -image -->
   <div class="feature-card-image">
-    <img src="source/images/background-black-white-squares-.jpg" alt="Black and white background">
+    <img src="source/images/background-black-white-squares-.jpg" alt="Black and white background" id="black-white">
     <img src="${data[x].image}" alt="${data[x].cardHeader}" class="body-builder-image">
   </div>
   <!-- card description (Body) -->
