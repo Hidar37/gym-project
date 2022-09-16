@@ -39,11 +39,13 @@ const data = [
     cardText: 'Best place for perpearing for Professional carrear.',
   },
 ];
-for (let x = 0; x < data.length; x++) {
+for (let x = 0; x < data.length; x++) {git commit -m 'Black and white background added to feature-speaker images as it was mentioned in request changes.'
+
   const featureSpeakerBody = `<div class="feature-card">
   <!-- card -image -->
   <div class="feature-card-image">
-    <img src="${data[x].image}" alt="${data[x].cardHeader}">
+    <img src="source/images/background-black-white-squares-.jpg" alt="Black and white background">
+    <img src="${data[x].image}" alt="${data[x].cardHeader}" class="body-builder-image">
   </div>
   <!-- card description (Body) -->
   <div class="feature-card-body">

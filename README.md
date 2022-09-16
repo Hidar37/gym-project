@@ -2,13 +2,17 @@
 
 > This is the first Milestone project that I am going to build which is A website for a gym. This project is created with HTML, CSS AND JS and has some functionality like the hamburger menu, adapting to different screen sizes(Mobile and Desktop Version). For now only the [Home] and [about] page is working. I special thanks to Mr. Cindy Shin for lating as to use their website design.
 
+## Desciption video about the Project
+
+https://github.com/Hidar37/gym-project/pull/url
+
 ## Built With
 
 - HTML
 - CSS
 - JS
 
-## Live Demo (if available)
+## Live Demo
 
 https://hidar37.github.io/gym-project/
 
